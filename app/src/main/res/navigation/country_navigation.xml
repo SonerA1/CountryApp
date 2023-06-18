@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/country_navigation"
+    app:startDestination="@id/openFragment">
+
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="com.soneralci.countrykotlinlist.view.FeedFragment"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_feed" >
+        <action
+            android:id="@+id/action_feedFragment_to_countryFragment"
+            app:destination="@id/countryFragment" />
+        <action
+            android:id="@+id/action_feedFragment_to_openFragment"
+            app:destination="@id/openFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/countryFragment"
+        android:name="com.soneralci.countrykotlinlist.view.CountryFragment"
+        android:label="fragment_country"
+        tools:layout="@layout/fragment_country" >
+        <action
+            android:id="@+id/action_countryFragment_to_feedFragment"
+            app:destination="@id/feedFragment" />
+        <argument
+            android:name="countryUuid"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_countryFragment_to_feedFragment2"
+            app:destination="@id/feedFragment" />
+        <action
+            android:id="@+id/action_countryFragment_to_openFragment"
+            app:destination="@id/openFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/openFragment"
+        android:name="com.soneralci.countrykotlinlist.view.OpenFragment"
+        android:label="fragment_open"
+        tools:layout="@layout/fragment_open" >
+        <action
+            android:id="@+id/action_openFragment_to_feedFragment"
+            app:destination="@id/feedFragment" />
+    </fragment>
+</navigation>

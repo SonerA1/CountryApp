@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#39C4A2</color>
+    <color name="orange">#132850</color>
+    #800080
+    <color name="leftColor">#800080</color>
+    <color name="midColor">#0575E6</color>
+    <color name="rightColor">#00F260</color>
+
+    <color name="star">#22c1c3</color>
+    <color name="end">#fdbb2d</color>
+
+    <color name="op">#8360c3</color>
+    <color name="ope">#2ebf91</color>
+
+</resources>
